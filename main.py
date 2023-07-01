@@ -6,9 +6,10 @@ import pytz #used to convert the timezones
 import ssl
 import smtplib
 from email.message import EmailMessage
+import os
 
 email_sender = "anandn9804@gmail.com"
-email_password = "ptoyfxljjsjylsgl"
+email_password = os.environ.get("emailpassword")
 email_receiver = email_sender
 MY_LAT = 16.518901
 MY_LONG = 81.361897
